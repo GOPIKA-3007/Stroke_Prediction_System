@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="patient.css" />
+  <script src="patient.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <header class="top-header">
+    <div class="logo">🧠 Patient</div>
+    <div class="welcome">Welcome, Patient</div>
+    <button class="logout-btn" onclick="window.location.href='Untitled-1.html'">Logout</button>
+  </header>
+
+  <main class="main-content">
+    <section class="results-section">
+      <h2>Your CT Scan Results</h2>
+
+      <div class="card analysis-card">
+        <h3>CNN Analysis Result</h3>
+        <div class="carousel">
+          <img src="image-placeholder.jpg" alt="Scan result" />
+          <div class="dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="result-box">
+          <p><strong>Analysis Result:</strong> Medium Risk</p>
+          <p><strong>Stroke Probability:</strong> 64.28%</p>
+          <p><strong>Model Confidence:</strong> Medium (86.7%)</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Doctor's Notes</h3>
+        <p><strong>Recommendations:</strong> Close monitoring, increased medication, follow-up within 2 weeks.</p>
+        <p><strong>Additional Notes:</strong> Maintain low-sodium diet, avoid physical strain, monitor BP daily.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 NeuroShield.  All rights reserved.</p>
+  </footer>
+</body>
+</html>

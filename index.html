@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav1">
+            <img src="./assets/medical-report.png" height="60px" alt="">   <span><h3>  NeuroShield</h3></span>
+            
+        </div>
+        
+        <div class="nav3">
+            <ul>
+                <li><a href="Untitled-1.html" class="active">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="content1">
+            <img src="./assets/21723437_6511591.jpg" alt="">
+        </div>
+        <div class="content2">
+            <h2>Login</h2>
+  <div class="role-select">
+    <input type="radio" id="admin" name="role" value="admin">
+    <label for="admin">Admin</label>
+    <input type="radio" id="doctor" name="role" value="doctor">
+    <label for="doctor">Doctor</label>
+    <input type="radio" id="patient" name="role" value="patient">
+    <label for="patient">Patient</label>
+  </div>
+  <form id="loginForm">
+    <input type="text" placeholder="Username" id="username" name="username" required />
+    <input type="password" placeholder="Password" id="password" name="password" required />
+    <button type="submit" id="loginBtn">Login</button>
+  </form>
+
+        </div>
+    </div>
+    
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // prevent default form submission
+
+      const role = document.querySelector('input[name="role"]:checked')?.value;
+
+      if (role === 'admin') {
+        window.location.href = 'admin.html';
+      } else if (role === 'doctor') {
+        window.location.href = 'doctor.html';
+      } else if (role === 'patient') {
+        window.location.href = 'patient.html';
+      } else {
+        alert('Please select a role.');
+      }
+    });
+  </script>
+  <footer>
+    <p>&copy; 2024 NeuroShield.  All rights reserved.</p>
+  </footer>  
+</body>
+</html>

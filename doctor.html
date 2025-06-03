@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="doctor.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>🏥 Doctor</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="CT_upload.html">Upload CT Scan</a></li>
+          <li><a href="Untitled-1.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Doctor Dashboard</h1>
+        <button class="logout-btn" onclick="window.location.href='Untitled-1.html'">Logout</button>
+      </header>
+
+      <section class="overview">
+        <h2>Dashboard Overview</h2>
+        <p>Welcome back</p>
+        <div class="overview-cards">
+          <div class="card"><strong>My Patients:</strong> 32</div>
+          <div class="card"><strong>CT Scans Analyzed:</strong> 87</div>
+          <div class="card"><strong>High Risk Patients:</strong> 8</div>
+          <div class="card"><strong>Appointments Today:</strong> 5</div>
+        </div>
+      </section>
+
+      <section class="patients">
+        <h2>Recent Patients</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Patient ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Last Visit</th>
+              <th>Risk Level</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PAT-10023</td>
+              <td>John Smith</td>
+              <td>65</td>
+              <td>3/15/2025</td>
+              <td><span class="tag yellow">Medium</span></td>
+              <td><button class="btn1" onclick="window.location.href='CT_upload.html'"><i class="fa-solid fa-plus"></i> Add</button></td>
+            </tr>
+            <tr>
+              <td>PAT-10024</td>
+              <td>Maria Rodriguez</td>
+              <td>58</td>
+              <td>3/18/2025</td>
+              <td><span class="tag green">Low</span></td>
+              <td><button class="btn1" onclick="window.location.href='CT_upload.html'"><i class="fa-solid fa-plus"></i> Add</button></td>
+            </tr>
+            <tr>
+              <td>PAT-10025</td>
+              <td>Robert Williams</td>
+              <td>72</td>
+              <td>3/20/2025</td>
+              <td><span class="tag red">High</span></td>
+              <td><button class="btn1" onclick="window.location.href='CT_upload.html'"><i class="fa-solid fa-plus"></i> Add</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="ct-scans">
+        <h2>Recent CT Scans</h2>
+        <div class="scan-card">
+          <img src="https://via.placeholder.com/250x150" alt="CT Scan" />
+          <div class="details">
+            <p><strong>John Smith</strong></p>
+            <p>ID: PAT-10023 | Date: 2025-03-15</p>
+            <span class="tag yellow">Medium Risk</span>
+          </div>
+        </div>
+        <div class="scan-card">
+            <img src="https://via.placeholder.com/250x150" alt="CT Scan" />
+            <div class="details">
+              <p><strong>Maria Rodriguez</strong></p>
+              <p>ID: PAT-10024 | Date: 2025-03-18</p>
+              <span class="tag green">Low Risk</span>
+            </div>
+          </div>
+          <div class="scan-card">
+            <img src="https://via.placeholder.com/250x150" alt="CT Scan" />
+            <div class="details">
+              <p><strong>Robert Williams</strong></p>
+              <p>ID: PAT-10025 | Date: 2025-03-20</p>
+              <span class="tag red">High Risk</span>
+            </div>
+          </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2024 NeuroShield.  All rights reserved.</p>
+  </footer>
+</body>
+</html>

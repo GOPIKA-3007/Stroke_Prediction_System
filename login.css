@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color:rgb(163, 230, 192);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 800;
+  }
+  
+  nav a:hover {
+    color: purple;
+  }
+  
+  .banner {
+    background: url('wp5193760.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .banner-text h1 {
+    font-size: 3rem;
+  }
+  
+  .banner-text p {
+    margin-top: 0.5rem;
+  }
+  
+  .form-section {
+    background-color: white;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .form-grid label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .form-grid input,
+  .form-grid textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .form-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  button.submit,
+  button.cancel {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  button.submit {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.cancel {
+    background-color: #f44336;
+    color: white;
+  }
+  

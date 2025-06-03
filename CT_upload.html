@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload CT Scan</title>
+  <link rel="stylesheet" href="CT_upload.css" />
+  <script src="CT_upload.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>🏥 Doctor</h2>
+      <div class="user">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="doctor.html">Dashboard</a></li>
+          <li><a href="CT_upload.html">Upload CT Scan</a></li>
+          <li><a href="Untitled-1.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Doctor Dashboard</h1>
+        <button class="logout-btn" onclick="window.location.href='Untitled-1.html'">Logout</button>
+      </header>
+
+      <section class="upload-section">
+        <h2>Upload New CT Scan</h2>
+        <div class="card">
+            <form id="ctForm" action="upload_scan.php" method="POST" enctype="multipart/form-data">
+                <label>Select Patient</label>
+                <select name="patient_id" id="patientSelect" required>
+                  <option>Loading...</option>
+                </select>
+                
+                <label>Scan Date</label>
+                <input type="date" name="scan_date" required />
+              
+                <label>Scan Type</label>
+                <select name="scan_type" required>
+                  <option value="CT Scan">CT Scan</option>
+                  <option value="CBV">CBV</option>
+                  <option value="CBF">CBF</option>
+                  <option value="TTP">TTP</option>
+                </select>
+              
+                <label>Notes</label>
+                <textarea name="notes" placeholder="Enter any relevant notes about the scan"></textarea>
+              
+                <label>Upload CT Scan Images</label>
+                <input type="file" name="ct_images[]" multiple required />
+              
+                <div class="form-buttons">
+                  <button type="reset" class="cancel-btn">Cancel</button>
+                  <button type="submit" class="analyze-btn">Upload & Analyze</button>
+                </div>
+              
+                <label>Doctor's Notes</label>
+                <textarea name="doctor_notes" placeholder="Add your clinical notes about this scan"></textarea>
+            </form>
+              
+        </div>
+
+        <div class="card analysis-card">
+          <h3>CNN Analysis Result</h3>
+          <div class="carousel">
+            <img src="image-placeholder.jpg" alt="Scan result" />
+            <div class="dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="result-box">
+          </div>
+          <div class="form-buttons">
+            <button class="save-btn">Save to Patient Record</button>
+            <button class="share-btn">Share with Patient</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2024 NeuroShield.  All rights reserved.</p>
+  </footer>
+</body>
+</html>

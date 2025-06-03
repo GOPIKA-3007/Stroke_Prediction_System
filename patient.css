@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: #f9fdfb;
+    color: #092635;
+  }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #092635;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .top-header .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .top-header .welcome {
+    font-size: 18px;
+  }
+  
+  .logout-btn {
+    background: #4ade80;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .logout-btn:hover {
+    background: #16a34a;
+  }
+  
+  .main-content {
+    padding: 30px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #065f46;
+  }
+  
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .analysis-card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .dots {
+    margin-top: 10px;
+  }
+  
+  .dots span {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #a3ffcb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  

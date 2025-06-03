@@ -1,0 +1,110 @@
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: rgb(163, 230, 192);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+}
+
+.nav3{
+    margin-right: 20px;
+}
+.nav3 ul li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav3 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    list-style:none;
+    font-weight: 700;
+    
+}
+
+.nav3 ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(240, 240, 244);
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content1{
+    width: 50%;
+}
+
+.content1 img{
+    height: 600px;
+}
+
+.content2{
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(191, 230, 208);
+    border-radius: 6rem;
+    width:50%;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.content2 form{
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#username{
+    padding-left: 30px;
+    width: 60%;
+    height: 40px;
+    border-radius: 1rem;
+}
+#password{
+    padding-left: 30px;
+    width: 60%;
+    height: 40px;
+    border-radius: 1rem;
+}
+
+.content2 form button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(59, 199, 91);
+    color: azure;
+    font-weight: 700;
+}
+
+.content2 form button:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    background-color: rgb(2, 205, 49);
+    font-size: 18px;
+}

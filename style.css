@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #04353f;
+    color: black;
+  }
+  
+  /* Header */
+  header {
+    background-color:rgb(163, 230, 192);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: darkblue;
+    font-weight: 800;
+  }
+  
+  nav a.active {
+    color: purple;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('pngtree-a-human-brain-exploding-with-knowledge-image_15932391.jpg'); /* Replace with actual image path if you have */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .login {
+    background-color: white;
+    color: purple;
+  }
+  
+  .signup {
+    background-color: #7d46f3;
+    color: white;
+  }
+  
