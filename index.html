@@ -33,8 +33,6 @@
         <div class="content2">
             <h2>Login</h2>
   <div class="role-select">
-    <input type="radio" id="admin" name="role" value="admin">
-    <label for="admin">Admin</label>
     <input type="radio" id="doctor" name="role" value="doctor">
     <label for="doctor">Doctor</label>
     <input type="radio" id="patient" name="role" value="patient">
@@ -55,9 +53,7 @@
 
       const role = document.querySelector('input[name="role"]:checked')?.value;
 
-      if (role === 'admin') {
-        window.location.href = 'admin.html';
-      } else if (role === 'doctor') {
+      if (role === 'doctor') {
         window.location.href = 'doctor.html';
       } else if (role === 'patient') {
         window.location.href = 'patient.html';

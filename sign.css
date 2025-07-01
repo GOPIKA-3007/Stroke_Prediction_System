@@ -91,6 +91,12 @@
     height: 40px;
     border-radius: 1rem;
 }
+#confirmPassword{
+    padding-left: 30px;
+    width: 60%;
+    height: 40px;
+    border-radius: 1rem;
+}
 
 .content2 form button{
     width: 100px;

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Admin</title>
   <link rel="stylesheet" href="login.css" />
+  <script src="admin.js" defer></script>
 </head>
 <body>
   <header>
@@ -62,10 +63,6 @@
           <label for="symptoms">Symptoms</label>
           <textarea id="symptoms" rows="3" required></textarea>
         </div>
-        <div>
-          <label for="doctor">Doctor</label>
-          <input type="text" id="doctor" required />
-        </div>
       </div>
 
       <div class="form-buttons">
@@ -73,6 +70,15 @@
         <button type="reset" class="cancel">Cancel</button>
       </div>
     </form>
+  </section>
+
+  <!-- Add a table to show all patients -->
+  <section class="patients-list">
+    <h2>All Patients</h2>
+    <table id="patientsTable">
+      <tr><th>ID</th><th>Name</th><th>Age</th><th>Gender</th></tr>
+      <!-- JS will populate -->
+    </table>
   </section>
 
   <script src="login.js"></script>

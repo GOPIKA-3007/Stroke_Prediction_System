@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doctor Dashboard</title>
   <link rel="stylesheet" href="doctor.css" />
+  <script src="doctor.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -104,6 +105,25 @@
               <span class="tag red">High Risk</span>
             </div>
           </div>
+      </section>
+
+      <!-- Add a table for recent scans (for JS to fill) -->
+      <section class="scans">
+        <h2>Recent Scans</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Scan ID</th>
+              <th>Patient ID</th>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Risk Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JS will populate -->
+          </tbody>
+        </table>
       </section>
     </main>
   </div>
